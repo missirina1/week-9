@@ -1,0 +1,20 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+.gallery {
+  text-align: center;
+}
+
+.controls button {
+  width: 100px;
+  height: 20px;
+  background-color: black;
+  color: white;
+}
+img {
+  width: 300px;
+  height: auto;
+}
