@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.coast__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+button {
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: blue;
+}
+p {
+  font-weight: 500;
+}

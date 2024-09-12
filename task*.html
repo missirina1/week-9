@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/task*.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="coast__btn">
+      <button onclick="showTotalCoast()">Узнать стоимость</button>
+      <p id="showTotalCoastDown"></p>
+    </div>
+
+    <script>
+      function calculateTotalPrice(quantity = 2, price = 15000000) {
+        return quantity * price;
+      }
+
+      function showTotalCoast() {
+        let findCoast = calculateTotalPrice(2, 15000000);
+
+        alert(
+          findCoast.toLocaleString("ru-RU", {
+            style: "currency",
+            currency: "RUB",
+          })
+        );
+
+        document.getElementById("showTotalCoastDown").innerText =
+          findCoast.toLocaleString("ru-RU", {
+            style: "currency",
+            currency: "RUB",
+          });
+      }
+    </script>
+  </body>
+</html>
